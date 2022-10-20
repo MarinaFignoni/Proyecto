@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+    color: #FF6086;
+    margin-top: 2%;
+    margin-left: 5%;
+    font-size: 2rem;
+    font-variant: small-caps;
+}
+
+h3 {
+    color: #FF6086;
+    margin: 3%;
+    font-variant: small-caps;
+}
+
+.sobremi {
+    background-color: #FFEBF0;
+    width: 95%;
+    height: 20%;
+    border-style: outset;
+    border-color: #FF6086;
+    border-width: 1px;
+    padding: 2%;
+    margin-left: 2%;
+    margin-top: 30px;
+}
+
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #FF6086;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+section ul li {
+    list-style-type: none;
+    text-align: left;
+}
+
+nav ul {
+    text-align: center;
+
+}
+
+.card__quever {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-quever {
+    background-color: #fceff2;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    line-height: 1.5;
+    margin: 20px;
+    border-style: inset;
+    border-width: thin;
+    border-color: black;
+    width: 270px;
+}
+
+.card-quever img {
+    width: 100%;
+    height: 10rem;
+}
+
+footer {
+    text-align: right;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 70%;
+}
+
+.buscar {
+    display: flex;
+    justify-content: right;
+}
+
+.inicio {
+    background-color: #fceff2;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    line-height: 2;
+    border-style: inset;
+    border-width: thin;
+    border-color: black;
+    width: 304px;
+}
+
+.inicio:hover{
+transform: scale(1.1,1.1);
+}
+
+.random {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%
+}
+
+.tituloscards {
+    color: #FF6086;
+    font-weight: bold;
+}
+
+section article p {
+    color: #FF6086;
+    font-weight: bold;
+}
+
+#inicionav {
+    font-weight: bold;
+}
+
+#sobreminav {
+    font-weight: bold;
+}
+
+#quevernav {
+    font-weight: bold;
+}
+
+#guiasnav {
+    font-weight: bold;
+}
+
+#contactonav {
+    font-weight: bold;
+}
+
+.contacto {
+    display: flex;
+    justify-content: right;
+    margin-right: 5%;
+}
+
+div textarea {
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    border-color: #fce0e6;
+    background: #FFFDFD;
+    border-radius: 4px;
+
+}
+
+article div input {
+    width: 242px;
+    height: 34px;
+    background: #66D2D9;
+    margin-bottom: 5%;
+    margin-right: 3rem;
+    border-style: none;
+}
+
+footer {
+    margin-top: 10%
+}
+
+fieldset {
+    border-style: none;
+
+}
+
+button {
+    width: 242px;
+    height: 3.5em;
+}
+
+
+.redes {
+    display: flex;
+    margin: 1%;
+    margin-left: 3%;
+}
+
+.gridguiadeviaje {
+    display: grid;
+    grid-template-areas:  "guiasdeviaje . ."
+                          "america europa asia africa";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+}
+
+.guiasdeviaje {
+    grid-area: guiasdeviaje;
+}
+
+.america {
+    grid-area: america;
+}
+
+.europa {
+    grid-area: europa;
+}
+
+.asia {
+    grid-area: asia;
+}
+
+.africa {
+    grid-area: africa;
+}
+
+.guiadeviaje {
+    padding-top: 0;
+    margin: 60px;
+    width: 267px;;
+    line-height: 2.5;
+    box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    background-color: #fdf9fa;
+}
+
+button {
+    background-color: #66D2D9;
+    border-style: none;
+}
+
+button:hover{ 
+    background-color: #FF6086;
+    transition: 0.1s;
+    border-color: #b62446;
+    border-style: solid;
+}
+
+
+@media screen and (max-width: 1024px){
+    .gridguiadeviaje {
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: auto, 1fr, 1fr;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .gridguiadeviaje {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+}   
