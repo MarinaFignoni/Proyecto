@@ -33,29 +33,11 @@ h3 {
 }
 
 
-nav ul li {
-    display: inline-block;
-    font-size: 1.5rem;
-}
-
-nav ul li a {
-    display: block;
-    padding: 20px;
-    color: #FF6086;
-    text-decoration: none;
-    width: 100%;
-}
-
-
 section ul li {
     list-style-type: none;
     text-align: left;
 }
 
-nav ul {
-    text-align: center;
-
-}
 
 .card__quever {
     display: flex;
@@ -86,6 +68,7 @@ footer {
 .logo {
     display: flex;
     justify-content: center;
+    margin-left: 20px;
 }
 
 .logo img {
@@ -105,17 +88,25 @@ footer {
     border-style: inset;
     border-width: thin;
     border-color: black;
-    width: 304px;
+    width: 19rem;
+    margin: 3%;
 }
 
-.inicio:hover{
-transform: scale(1.1,1.1);
+.inicio:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.inicio img {
+    width: 100%;
+    height: 16rem
 }
 
 .random {
     display: flex;
     justify-content: space-around;
-    margin-top: 4%
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 3%;
 }
 
 .tituloscards {
@@ -171,7 +162,15 @@ article div input {
     border-style: none;
 }
 
+ol li {
+    display: list-item;
+    list-style-position: inside;
+    text-align: center;
+    padding: 1em;
+}
+
 footer {
+    text-align: center;
     margin-top: 10%
 }
 
@@ -180,11 +179,27 @@ fieldset {
 
 }
 
-button {
+.botoncito {
     width: 242px;
     height: 3.5em;
 }
 
+p {
+    margin-left: 2rem;
+    margin-right: 3rem;
+    padding: 1%;
+    line-height: 1.5
+}
+
+.madrid {
+    display: flex;
+    justify-content: center;
+    margin: 3%;
+}
+
+.madrid img {
+    width: 45%;
+}
 
 .redes {
     display: flex;
@@ -192,10 +207,19 @@ button {
     margin-left: 3%;
 }
 
+.redes img {
+    width: 30px
+}
+
+.banner {
+    width: 100%;
+    height: 300;
+}
+
 .gridguiadeviaje {
     display: grid;
-    grid-template-areas:  "guiasdeviaje . ."
-                          "america europa asia africa";
+    grid-template-areas: "guiasdeviaje . ."
+        "america europa asia africa";
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto;
 }
@@ -223,7 +247,8 @@ button {
 .guiadeviaje {
     padding-top: 0;
     margin: 60px;
-    width: 267px;;
+    width: 267px;
+    height: ;
     line-height: 2.5;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
@@ -235,24 +260,139 @@ button {
     border-style: none;
 }
 
-button:hover{ 
+button:hover {
     background-color: #FF6086;
     transition: 0.1s;
     border-color: #b62446;
     border-style: solid;
 }
 
+.guiadeviaje-boot {
+    display: flex;
 
-@media screen and (max-width: 1024px){
+}
+
+.alert {
+    margin-bottom: 0.5px;
+}
+
+ul li a{
+    text-decoration: none;
+    color:  #66D2D9;
+}
+nav ul li a {
+
+
+    color: #FF6086;
+    text-decoration: none;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 15px 5%;
+    align-items: center;
+}
+
+.logo {
+    color: #FFF;
+    font-size: 22px;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    font-size: 1.5rem;
+
+}
+
+dl, ol, ul{
+        margin-bottom: 0%;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #FF6086;
+    padding: 8px 30px;
+    border-radius: 7px;
+    transition: all .3s ease;
+
+}
+
+ul li a:hover {
+    color: #fa92ab
+}
+
+
+
+#icon svg {
+    color: #FF6086;
+    height: 28px;
+    transition: all .3s ease;
+}
+
+#icon:hover {
+    background: #FFF;
+}
+
+#icon:hover svg {
+    color: #66D2D9
+}
+
+#checkbox,
+#icon {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: flex-start
+    }
+
+    nav ul {
+        position: static;
+        width: 70%;
+        background-color: #fce0e7;
+        left: 0;
+        top: 0;
+        text-align: center;
+        display: none;
+        margin-top: 71px;
+    }
+
+    nav ul li {
+        display: block;
+        padding: 10px 15px;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px 0;
+    }
+
+    #icon {
+        display: block;
+    }
+
+    #checkbox:checked~ul {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
     .gridguiadeviaje {
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2, auto);
         grid-template-rows: auto, 1fr, 1fr;
     }
 }
 
-@media screen and (max-width: 420px){
+@media screen and (max-width: 420px) {
     .gridguiadeviaje {
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
-}   
+}

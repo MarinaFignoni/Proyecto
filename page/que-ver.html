@@ -8,24 +8,27 @@
     <link rel="icon" href="../assets/Sin_título-removebg-preview.png">
     <title> ¿Que ver? | Viaja con Maru </title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="../index.html"><img src="../assets/Sin_título-removebg-preview.png" alt=""></a>
+            <a href="../index.html"><img src="../assets/Sin_título-removebg-preview.png" alt="logo"></a>
         </div>
-
         <nav>
+            <input type="checkbox" id="checkbox">
+            <label for="checkbox" id="icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </label>
             <ul>
-                <li><a href="../index.html"> Inicio </a></li>
-                <li><a id="quevernav" href="#"> ¿Qué ver? </a></li>
-                <li><a href="./guias-de-viaje.html"> Guias de viaje </a></li>
-                <li><a href="./sobre-mi.html"> Sobre mi</a></li>
-                <li><a href="./contacto.html"> Contacto </a></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="#">Que ver?</a></li>
+                <li><a href="./guias-de-viaje.html">Guias de viaje</a></li>
+                <li><a href="./sobre-mi.html">Sobre mi</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -35,7 +38,7 @@
         </h2>
         <section class="card__quever">
             <article class="card-quever">
-                <img src="../assets/Paris.jpg"  alt="">
+                <img src="../assets/Paris.jpg" alt="paris torre eiffel">
                 <p>PARIS</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -43,7 +46,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/egipto.jpg"  alt="">
+                <img src="../assets/egipto.jpg" alt="egipto piramide">
                 <p>EGIPTO</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -51,7 +54,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/grecia.jpg" alt="">
+                <img src="../assets/grecia.jpg" alt="grecia paisaje">
                 <p>GRECIA</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -59,7 +62,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/maldivas.jpg"  alt="">
+                <img src="../assets/maldivas.jpg" alt="maldivas playa">
                 <p>MALDIVAS</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -67,7 +70,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/espana.jpg"  alt="">
+                <img src="../assets/espana.jpg" alt="barcelona sagrada flia">
                 <p>BARCELONA</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -76,7 +79,7 @@
 
             </article>
             <article class="card-quever">
-                <img src="../assets/roma.jpeg" alt="">
+                <img src="../assets/roma.jpeg" alt="italia coliseo">
                 <p>ITALIA</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -84,7 +87,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/machu.jpg"  alt="">
+                <img src="../assets/machu.jpg" alt="peru machu picchu">
                 <p>MACHU PICCHU</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -92,7 +95,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/GoldenGateBridge.jpg"  alt="">
+                <img src="../assets/GoldenGateBridge.jpg" alt="san francisco gate">
                 <p>SAN FRANCISCO</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -100,15 +103,15 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/vegas.jpg"  alt="">
+                <img src="../assets/vegas.jpg" alt="las vegas cartel">
                 <p>LAS VEGAS</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
                     laboriosam tempore accusamus porro eligendi explicabo asperiores nesciunt.
                 </div>
             </article>
-            <article class="card-quever">
-                <img src="../assets/rio-de-janeiro.jpg" alt="">
+            <article id="rio" class="card-quever">
+                <img src="../assets/rio-de-janeiro.jpg" alt="rio de janeiro cristo">
                 <p>RIO DE JANEIRO</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -116,15 +119,14 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/Taj-Mahal.jpg"  alt="">
-                <p>INDIA</p
-                <div>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
-                    laboriosam tempore accusamus porro eligendi explicabo asperiores nesciunt.
+                <img src="../assets/Taj-Mahal.jpg" alt="india taj mahal">
+                <p>INDIA</p <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
+                laboriosam tempore accusamus porro eligendi explicabo asperiores nesciunt.
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/china.jpg" alt="">
+                <img src="../assets/china.jpg" alt="gran muralla china">
                 <p>CHINA</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -132,7 +134,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/riviera-maya.jpg"  alt="">
+                <img src="../assets/riviera-maya.jpg" alt="mexico riviera maya">
                 <p>MEXICO</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -140,7 +142,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/noruega.jpg" alt="">
+                <img src="../assets/noruega.jpg" alt="noruega casas">
                 <p>NORUEGA</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
@@ -148,7 +150,7 @@
                 </div>
             </article>
             <article class="card-quever">
-                <img src="../assets/tailandia.jpg"  alt="">
+                <img src="../assets/tailandia.jpg" alt="tailandia playa">
                 <p>TAILANDIA</p>
                 <div>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate repellendus modi illum
