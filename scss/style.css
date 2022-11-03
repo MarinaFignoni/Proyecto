@@ -207,6 +207,9 @@ footer {
   margin: 1%;
   margin-left: 3%;
 }
+.redes a {
+  text-decoration: none;
+}
 .redes img {
   width: 2rem;
 }
