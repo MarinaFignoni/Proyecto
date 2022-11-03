@@ -1,0 +1,90 @@
+@media screen and (max-width: 1024px) {
+	.gridguiadeviaje {
+		display: flex;
+		flex-wrap: wrap;
+		grid-template-columns: repeat(2, auto);
+		grid-template-rows: auto, 1fr, 1fr;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.gridguiadeviaje {
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, 1fr);
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.madrid {
+		img {
+			width: 90%;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	nav {
+		justify-content: flex-start;
+
+		ul {
+			position: static;
+			width: 70%;
+			background-color: $background-color_6;
+			left: 0;
+			top: 0;
+			text-align: center;
+			display: none;
+			margin-top: 71px;
+
+			li {
+				display: block;
+				padding: 10px 15px;
+
+				a {
+					display: block;
+					padding: 10px 0;
+				}
+			}
+		}
+	}
+
+	#icon {
+		display: block;
+	}
+
+	#checkbox {
+		&:checked~ul {
+			display: block;
+		}
+	}
+}
+
+@media screen and (min-width: 769px) {
+	.sobremimobile {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.sobremi {
+		display: none;
+	}
+
+	.sobremimobile {
+		background-color: $background-color_1;
+		width: 95%;
+		height: 20%;
+		border-style: outset;
+		border-color: $border-color_1;
+		border-width: 1px;
+		padding: 2%;
+		margin-left: 2%;
+		margin-top: 30px;
+	}
+}
+
+@media screen and (min-width: 930px) {
+	.flecha_subir {
+		display: none;
+	}
+}

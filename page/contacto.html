@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../scss/style.css">
 </head>
 
 <body>
@@ -22,67 +22,73 @@
         <nav>
             <input type="checkbox" id="checkbox">
             <label for="checkbox" id="icon">
-                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
+                    </path>
+                </svg>
             </label>
             <ul>
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="./que-ver.html">¿Qué ver?</a></li>
                 <li><a href="./guias-de-viaje.html">Guias de viaje</a></li>
                 <li><a href="./sobre-mi.html">Sobre mi</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a id="contactonav" href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <h2>Contacto</h2>
-        <section class=" contenedorredes">
-                        <div class="redes">
-                            <img src="../assets/instalogo.png" alt="ig">
-                            <p>@viajaconmaru </p>
-                        </div>
-                        <div class="redes">
-                            <img src="../assets/twitterLogo.png" alt="tw">
-                            <p>/viajaconmaru</p>
-                        </div>
-                        <div class="redes">
-                            <img src="../assets/facebook.png" alt="fb">
-                            <p>/viajaconmaru</p>
-                        </div>
-                        </section>
-                        <form>
-                            <fieldset>
-                                <div class="contacto">
-                                    <article>
-                                        <h3>Dejanos tu mensaje</h3>
-                                        <div>
-                                            <div>
-                                                <input type="text" name="nombre" placeholder="Nombre">
-                                            </div>
-                                            <div>
-                                                <input type="text" name="apellido" placeholder="Apellido">
-                                            </div>
-                                            <div>
-                                                <input type="email" placeholder="Mail">
-                                            </div>
-                                        </div>
-                                    </article>
-                                    <div>
-                                        <div>
-                                            <textarea name="" placeholder="Escribe tu mensaje" cols="70"
-                                                rows="20"></textarea>
-                                        </div>
-                                        <div>
-                                            <button class="botoncito" type="submit"> Enviar</button>
-                                        </div>
 
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </form>
-                        </main>
-                        <footer>
-                            Copyright © 2022 derechos reservados
-                        </footer>
+        <form>
+            <fieldset>
+                <div class="contacto">
+                    <article>
+                        <h3>Dejanos tu mensaje</h3>
+                        <div>
+                            <div>
+                                <input type="text" name="nombre" placeholder="Nombre">
+                            </div>
+                            <div>
+                                <input type="text" name="apellido" placeholder="Apellido">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="Mail">
+                            </div>
+                        </div>
+                    </article>
+                    <div>
+                        <div>
+                            <textarea name="" placeholder="Escribe tu mensaje"></textarea>
+                        </div>
+                        <div>
+                            <button class="boton_contacto" type="submit"> Enviar</button>
+                        </div>
+
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="seguinosenredes">
+        <h3>Seguinos en</h3>
+        <section class="contenedor_redes" >
+            <div class="redes">
+                <img src="../assets/instalogo.png" alt="ig">
+                <a href="https://www.instagram.com/" Target="_blank"><p>@viajaconmaru </p></a>
+            </div>
+            <div class="redes">
+                <img src="../assets/twitterLogo.png" alt="tw">
+                <a href="https://twitter.com/" Target="_blank"><p>/viajaconmaru</p></a>
+            </div>
+            <div class="redes">
+                <img src="../assets/facebook.png" alt="fb">
+                <a href="https://www.facebook.com/" Target="_blank"><p>/viajaconmaru</p></a> 
+            </div>
+        </section>
+    </div>
+    </main>
+    <footer>
+        Copyright © 2022 derechos reservados
+    </footer>
 </body>
 
 </html>

@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./scss/style.css">
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
             </label>
             <ul>
-                <li><a href="./#">Inicio</a></li>
+                <li><a id="inicionav" href="./#">Inicio</a></li>
                 <li><a href="./page/que-ver.html">¿Qué ver?</a></li>
                 <li><a href="./page/guias-de-viaje.html">Guias de viaje</a></li>
                 <li><a href="./page/sobre-mi.html">Sobre mi</a></li>
@@ -38,18 +38,18 @@
             <img class="banner" src="./assets/header.jpg"  alt="banner">
         </div>
         <h2>Destinos destacados</h2>
-        <div class="random">
-            <div class="inicio">
+        <div class="card-destinos-inicio">
+            <div class="card__destinos">
                 <a href="./page/que-ver.html"> <img src="./assets/Paris.jpg"  alt="Paris torre eiffel"></a>
                 <p class="tituloscards">PARIS</p>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="inicio">
+            <div class="card__destinos">
                 <a href="./page/que-ver.html"><img src="./assets/maldivas.jpg" alt="maldivas mar"></a>
                 <p class="tituloscards">MALDIVAS</p>
                 <p>Lorem ipsum dolor sit amet.</p>
             </div>
-            <div class="inicio">
+            <div class="card__destinos">
                 <a href="./page/que-ver.html#rio"><img src="./assets/rio-de-janeiro.jpg"  alt="rio de janeiro cristo"></a>
                 <p class="tituloscards">RIO DE JANEIRO</p>
                 <p>Lorem ipsum dolor sit amet.</p>

@@ -1,0 +1,42 @@
+nav {
+	ul {
+		li {
+			a {
+				color: $color_1;
+				text-decoration: none;
+				text-decoration: none;
+				color: $color_1;
+				padding: 8px 30px;
+				border-radius: 7px;
+				transition: all .3s ease;
+			}
+			display: inline-block;
+			font-size: 1.5rem;
+		}
+	}
+	display: flex;
+	justify-content: center;
+	padding: 15px 5%;
+	align-items: center;
+}
+ul {
+	margin-bottom: 0%;
+}
+#icon {
+	svg {
+		color: $color_1;
+		height: 28px;
+		transition: all .3s ease;
+	}
+	&:hover {
+		background: #FFF;
+		svg {
+			color: $color_2;
+		}
+	}
+	display: none;
+}
+#checkbox {
+	display: none;
+}
+

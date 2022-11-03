@@ -1,0 +1,38 @@
+ul {
+	li {
+		a {
+			text-decoration: none;
+			color: $color_2;
+			&:hover {
+				color: $color_4;
+			}
+		}
+	}
+	list-style: none;
+	margin-bottom: 0%;
+}
+
+ol {
+	li {
+		display: list-item;
+		list-style-position: inside;
+		text-align: center;
+		padding: 1em;
+	}
+	margin-bottom: 0%;
+}
+
+section {
+	ul {
+		li {
+			list-style-type: none;
+			text-align: left;
+		}
+	}
+	article {
+		p {
+			color: $color_1;
+			font-weight: bold;
+		}
+	}
+}

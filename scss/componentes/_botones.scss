@@ -1,0 +1,12 @@
+.boton_contacto {
+    width: 15rem;
+	height: 3.5em;
+	background-color: $background-color_4;
+	border-style: none;
+	&:hover {
+		background-color: $background-color_5;
+		transition: 0.1s;
+		border-color: $border-color_4;
+		border-style: solid;
+	}
+}

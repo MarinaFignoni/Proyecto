@@ -1,0 +1,404 @@
+#inicionav {
+  font-weight: bold;
+}
+
+#sobreminav {
+  font-weight: bold;
+}
+
+#quevernav {
+  font-weight: bold;
+}
+
+#guiasnav {
+  font-weight: bold;
+}
+
+#contactonav {
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h2 {
+  color: #FF6086;
+  margin-top: 2%;
+  margin-left: 5%;
+  font-size: 2rem;
+  font-variant: small-caps;
+}
+
+h3 {
+  color: #FF6086;
+  margin: 3%;
+  font-variant: small-caps;
+}
+
+footer {
+  text-align: right;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.gridguiadeviaje {
+  display: grid;
+  grid-template-areas: "guiasdeviaje . ." "america europa asia africa";
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto auto;
+}
+
+.guiasdeviaje {
+  grid-area: guiasdeviaje;
+}
+
+.america {
+  grid-area: america;
+}
+
+.europa {
+  grid-area: europa;
+}
+
+.asia {
+  grid-area: asia;
+}
+
+.africa {
+  grid-area: africa;
+}
+
+.guiadeviaje {
+  padding-top: 0;
+  margin: 3rem;
+  width: 267px;
+  line-height: 2.5;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  background-color: #fdf9fa;
+}
+
+.card-destinos-inicio {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 3%;
+}
+
+.card__destinos {
+  background-color: #fceff2;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  line-height: 2;
+  border-style: inset;
+  border-width: thin;
+  border-color: black;
+  width: 19rem;
+  margin: 3%;
+}
+.card__destinos:hover {
+  transform: scale(1.1, 1.1);
+}
+.card__destinos img {
+  width: 100%;
+  height: 16rem;
+}
+
+.tituloscards {
+  color: #FF6086;
+  font-weight: bold;
+}
+
+.card__quever {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.card-quever {
+  background-color: #fceff2;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  line-height: 1.5;
+  margin: 20px;
+  border-style: inset;
+  border-width: thin;
+  border-color: black;
+  width: 270px;
+}
+.card-quever img {
+  width: 100%;
+  height: 10rem;
+}
+
+.boton_contacto {
+  width: 15rem;
+  height: 3.5em;
+  background-color: #66D2D9;
+  border-style: none;
+}
+.boton_contacto:hover {
+  background-color: #FF6086;
+  transition: 0.1s;
+  border-color: #b62446;
+  border-style: solid;
+}
+
+.sobremi {
+  background-color: #FFEBF0;
+  width: 95%;
+  height: 20%;
+  border-style: outset;
+  border-color: #FF6086;
+  border-width: 1px;
+  padding: 2%;
+  margin-left: 2%;
+  margin-top: 30px;
+}
+
+.guia-madrid {
+  margin-left: 2rem;
+  margin-right: 3rem;
+  padding: 1%;
+  line-height: 1.5;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+  color: #FFF;
+  font-size: 22px;
+}
+.logo img {
+  width: 70%;
+}
+
+.banner {
+  width: 100%;
+  height: 300;
+}
+
+.madrid {
+  display: flex;
+  justify-content: center;
+  margin: 3%;
+}
+
+.contenedor_redes {
+  display: flex;
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.seguinosenredes {
+  display: flex;
+}
+
+.redes {
+  display: flex;
+  align-items: center;
+  margin: 1%;
+  margin-left: 3%;
+}
+.redes img {
+  width: 2rem;
+}
+
+.flecha_subir {
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  height: 2.5rem;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px 5%;
+  align-items: center;
+}
+nav ul li {
+  display: inline-block;
+  font-size: 1.5rem;
+}
+nav ul li a {
+  color: #FF6086;
+  text-decoration: none;
+  text-decoration: none;
+  color: #FF6086;
+  padding: 8px 30px;
+  border-radius: 7px;
+  transition: all 0.3s ease;
+}
+
+ul {
+  margin-bottom: 0%;
+}
+
+#icon {
+  display: none;
+}
+#icon svg {
+  color: #FF6086;
+  height: 28px;
+  transition: all 0.3s ease;
+}
+#icon:hover {
+  background: #FFF;
+}
+#icon:hover svg {
+  color: #66D2D9;
+}
+
+#checkbox {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  margin-bottom: 0%;
+}
+ul li a {
+  text-decoration: none;
+  color: #66D2D9;
+}
+ul li a:hover {
+  color: #fa92ab;
+}
+
+ol {
+  margin-bottom: 0%;
+}
+ol li {
+  display: list-item;
+  list-style-position: inside;
+  text-align: center;
+  padding: 1em;
+}
+
+section ul li {
+  list-style-type: none;
+  text-align: left;
+}
+section article p {
+  color: #FF6086;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1024px) {
+  .gridguiadeviaje {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto, 1fr, 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .gridguiadeviaje {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+}
+@media screen and (max-width: 710px) {
+  .madrid img {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav {
+    justify-content: flex-start;
+  }
+  nav ul {
+    position: static;
+    width: 70%;
+    background-color: #fce0e7;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: none;
+    margin-top: 71px;
+  }
+  nav ul li {
+    display: block;
+    padding: 10px 15px;
+  }
+  nav ul li a {
+    display: block;
+    padding: 10px 0;
+  }
+  #icon {
+    display: block;
+  }
+  #checkbox:checked ~ ul {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) {
+  .sobremimobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sobremi {
+    display: none;
+  }
+  .sobremimobile {
+    background-color: #FFEBF0;
+    width: 95%;
+    height: 20%;
+    border-style: outset;
+    border-color: #FF6086;
+    border-width: 1px;
+    padding: 2%;
+    margin-left: 2%;
+    margin-top: 30px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .flecha_subir {
+    display: none;
+  }
+}
+.guiadeviaje-boot {
+  display: flex;
+}
+
+.alert {
+  margin-bottom: 0.5px;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+div textarea {
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: #fce0e6;
+  background: #FFFDFD;
+  border-radius: 4px;
+  width: 30rem;
+  height: 20rem;
+}
+
+article div input {
+  width: 15rem;
+  height: 2.5rem;
+  background: #66D2D9;
+  margin-bottom: 5%;
+  margin-right: 3rem;
+  border-style: none;
+}
+
+fieldset {
+  border-style: none;
+}/*# sourceMappingURL=style.css.map */

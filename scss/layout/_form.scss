@@ -1,0 +1,33 @@
+.contacto {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+div {
+    textarea {
+        box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
+        border-color: $border-color_3;
+        background: #FFFDFD;
+        border-radius: 4px;
+        width: 30rem;
+        height: 20rem;
+    }
+}
+
+article {
+    div {
+        input {
+            width: 15rem;
+            height: 2.5rem;
+            background: #66D2D9;
+            margin-bottom: 5%;
+            margin-right: 3rem;
+            border-style: none;
+        }
+    }
+}
+
+fieldset {
+    border-style: none;
+}
