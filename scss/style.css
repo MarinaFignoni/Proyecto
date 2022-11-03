@@ -194,6 +194,7 @@ footer {
 
 .contenedor_redes {
   display: flex;
+  flex-direction: column;
   margin-top: 5%;
   justify-content: center;
 }
@@ -205,7 +206,6 @@ footer {
 .redes {
   display: flex;
   align-items: center;
-  flex-direction: column;
   margin: 1%;
   margin-left: 3%;
 }

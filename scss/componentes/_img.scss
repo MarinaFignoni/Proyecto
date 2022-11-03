@@ -23,18 +23,18 @@
 
 .contenedor_redes{
 	display: flex;
+    flex-direction: column;
 	margin-top: 5%;
 	justify-content: center;
 }
 
 .seguinosenredes{
 	display: flex;
-
 }
+
 .redes {
 	display: flex;
 	align-items: center;
-    flex-direction: column;
 	margin: 1%;
 	margin-left: 3%;
     a {
