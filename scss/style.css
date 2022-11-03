@@ -151,13 +151,13 @@ footer {
 
 .sobremi {
   background-color: #FFEBF0;
-  width: 95%;
+  width: 60%;
   height: 20%;
   border-style: outset;
   border-color: #FF6086;
   border-width: 1px;
   padding: 2%;
-  margin-left: 2%;
+  margin-left: 5%;
   margin-top: 30px;
 }
 
@@ -218,6 +218,14 @@ footer {
   margin-left: 5px;
   margin-bottom: 10px;
   height: 2.5rem;
+}
+
+.imagen_sobremi {
+  display: flex;
+  justify-content: center;
+}
+.imagen_sobremi img {
+  width: 25rem;
 }
 
 nav {
