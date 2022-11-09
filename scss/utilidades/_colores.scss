@@ -30,3 +30,18 @@ $border-color_4: #b62446;
 #contactonav {
 	font-weight: bold;
 }
+
+
+
+/*Esto es para incluir maps en el proyecto*/
+
+$paleta-de-colores:(
+	prim:red,
+	secund:pink,
+	terc:white
+);
+
+.incluyo-maps {
+	background-color: map-get($paleta-de-colores,secund);
+}
+

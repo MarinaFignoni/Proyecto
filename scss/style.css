@@ -19,6 +19,11 @@
   font-weight: bold;
 }
 
+/*Esto es para incluir maps en el proyecto*/
+.incluyo-maps {
+  background-color: pink;
+}
+
 * {
   margin: 0;
   padding: 0;
