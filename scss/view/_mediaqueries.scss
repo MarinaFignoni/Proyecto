@@ -1,4 +1,4 @@
-/* Media queries para html guia de viaje */
+/* Media para guia de viaje */
 
 @media screen and (max-width: 1024px) {
 	.gridguiadeviaje {
@@ -16,7 +16,7 @@
 	}
 }
 
-/* Media q para imagen en html de España*/
+/* Media para imagen en España*/
 
 @media screen and (max-width: 710px) {
 	.madrid {
@@ -26,32 +26,34 @@
 	}
 }
 
-/* Media q para menu desplegable */
+
 
 @media screen and (max-width: 768px) {
+	/* Media para menu desplegable */
 	nav {
 		display: block;
 		justify-content: flex-start;
 		padding-bottom: 0;
 		position: absolute;
 		width: 100%;
-		padding: 2%;
+		padding: 0;
 		z-index: 1;
-
 
 		ul {
 			background-color: $background-color_6;
 			text-align: center;
 			display: none;
-
+			
 
 			li {
 				display: block;
 				padding: 10px 15px;
+				
 
 				a {
 					display: block;
-					padding: 10px 0;
+					padding: 10px 0;	
+					
 				}
 			}
 		}
@@ -60,16 +62,19 @@
 	#icon {
 		display: block;
 		width: 42px;
+		margin-left: 4%;
+		
 	}
 
 	#checkbox {
 		&:checked~ul {
 			display: block;
+			
 		}
 	}
 
-	/* Media q para html Sobre mi*/
-	
+	/* Media para Sobre mi*/
+
 	.sobremi {
 		display: none;
 	}
@@ -87,7 +92,7 @@
 	}
 }
 
-/* Media q para html Sobre mi*/
+/* Media para Sobre mi*/
 
 @media screen and (min-width: 769px) {
 	.sobremimobile {
@@ -96,10 +101,10 @@
 }
 
 
-	/* Media q para flecha en Que ver*/
+/* Media para flecha en Que ver*/
 
-	@media screen and (min-width: 930px) {
-		.flecha_subir {
-			display: none;
-		}
+@media screen and (min-width: 930px) {
+	.flecha_subir {
+		display: none;
 	}
+}
