@@ -30,17 +30,20 @@
 
 @media screen and (max-width: 768px) {
 	nav {
+		display: block;
 		justify-content: flex-start;
+		padding-bottom: 0;
+		position: absolute;
+		width: 100%;
+		padding: 2%;
+		z-index: 1;
+
 
 		ul {
-			position: static;
-			width: 70%;
 			background-color: $background-color_6;
-			left: 0;
-			top: 0;
 			text-align: center;
 			display: none;
-			margin-top: 71px;
+
 
 			li {
 				display: block;
@@ -56,6 +59,7 @@
 
 	#icon {
 		display: block;
+		width: 42px;
 	}
 
 	#checkbox {
@@ -63,20 +67,13 @@
 			display: block;
 		}
 	}
-}
 
-/* Media q para html Sobre mi*/
-
-@media screen and (min-width: 769px) {
-	.sobremimobile {
-		display: none;
-	}
-}
-
-@media screen and (max-width: 768px) {
+	/* Media q para html Sobre mi*/
+	
 	.sobremi {
 		display: none;
-	}   
+	}
+
 	.sobremimobile {
 		background-color: $background-color_1;
 		width: 95%;
@@ -90,10 +87,19 @@
 	}
 }
 
-/* Media q para flecha en Que ver*/
+/* Media q para html Sobre mi*/
 
-@media screen and (min-width: 930px) {
-	.flecha_subir {
+@media screen and (min-width: 769px) {
+	.sobremimobile {
 		display: none;
 	}
 }
+
+
+	/* Media q para flecha en Que ver*/
+
+	@media screen and (min-width: 930px) {
+		.flecha_subir {
+			display: none;
+		}
+	}

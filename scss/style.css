@@ -33,7 +33,7 @@
 
 h2 {
   color: #FF6086;
-  margin-top: 2%;
+  margin-top: 13%;
   margin-left: 5%;
   font-size: 2rem;
   font-variant: small-caps;
@@ -188,6 +188,7 @@ footer {
 }
 
 .banner {
+  margin-top: 15%;
   width: 100%;
   height: 300;
 }
@@ -337,17 +338,18 @@ section article p {
 /* Media q para menu desplegable */
 @media screen and (max-width: 768px) {
   nav {
+    display: block;
     justify-content: flex-start;
+    padding-bottom: 0;
+    position: absolute;
+    width: 100%;
+    padding: 2%;
+    z-index: 1;
   }
   nav ul {
-    position: static;
-    width: 70%;
     background-color: #fce0e7;
-    left: 0;
-    top: 0;
     text-align: center;
     display: none;
-    margin-top: 71px;
   }
   nav ul li {
     display: block;
@@ -359,18 +361,12 @@ section article p {
   }
   #icon {
     display: block;
+    width: 42px;
   }
   #checkbox:checked ~ ul {
     display: block;
   }
-}
-/* Media q para html Sobre mi*/
-@media screen and (min-width: 769px) {
-  .sobremimobile {
-    display: none;
-  }
-}
-@media screen and (max-width: 768px) {
+  /* Media q para html Sobre mi*/
   .sobremi {
     display: none;
   }
@@ -384,6 +380,12 @@ section article p {
     padding: 2%;
     margin-left: 2%;
     margin-top: 30px;
+  }
+}
+/* Media q para html Sobre mi*/
+@media screen and (min-width: 769px) {
+  .sobremimobile {
+    display: none;
   }
 }
 /* Media q para flecha en Que ver*/
